@@ -1,0 +1,19 @@
+{
+  "name": "difyworker",
+  "version": "1.0.0",
+  "description": "convert Dify API into OpenAI API",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.20.0"
+  },
+  "keywords": [],
+  "author": "Tao Wang",
+  "license": "MIT",
+  "dependencies": {
+    "@cloudflare/kv-asset-handler": "^0.3.4"
+  }
+}

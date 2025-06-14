@@ -1,0 +1,26 @@
+name = "difyworker"
+main = "worker.js"
+compatibility_date = "2024-03-20"
+
+[site]
+bucket = "./public"
+
+[vars]
+# Required: API key for proxy authentication
+PROXY_API_KEY = "your_proxy_api_key_here"
+
+# Agent 1 Configuration
+DIFY_AGENT1_NAME = "Agent 1 Name"
+DIFY_AGENT1_TYPE = "Chat"
+DIFY_AGENT1_URL = "https://dify.example.com/v1"
+DIFY_AGENT1_KEY = "your_dify_agent1_api_key_here"
+DIFY_AGENT1_INPUT_VARIABLE = ""
+DIFY_AGENT1_OUTPUT_VARIABLE = ""
+
+# Agent 2 Configuration
+DIFY_AGENT2_NAME = "Agent 2 Name"
+DIFY_AGENT2_TYPE = "Chat"
+DIFY_AGENT2_URL = "https://dify.example.com/v1"
+DIFY_AGENT2_KEY = "your_dify_agent2_api_key_here"
+DIFY_AGENT2_INPUT_VARIABLE = ""
+DIFY_AGENT2_OUTPUT_VARIABLE = ""

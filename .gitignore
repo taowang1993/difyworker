@@ -1,0 +1,5 @@
+# Local configuration files
+wrangler.toml
+
+# Dependencies
+node_modules/
