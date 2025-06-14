@@ -31,16 +31,15 @@ const data = await response.json();
 console.log(data);
 ```
 
-## Configuration
+## Deployment
+### Option 1: Deploy with Wrangler
 
-1. Copy the example configuration file and update it with your values:
+Copy the example configuration file and update it with your values:
    ```bash
    cp wrangler.example.toml wrangler.toml
    ```
 
-2. Edit `wrangler.toml` and fill in your actual configuration values.
-
-## Deployment
+Log into Cloudflare and deploy:
 
 ```bash
 wrangler login
@@ -48,9 +47,17 @@ npm install
 npm run deploy
 ```
 
+### Option 2: Copy the worker-cp.js to Cloudflare Dashboard
+
+1. Log into Cloudflare and navigate to the Workers section.
+2. Click on "Create a Worker" and paste the contents of `worker-cp.js` into the editor.
+3. Configure the environment variables in the "Environment Variables" section.
+4. Deploy the worker.
+
+## Environment Variables
+
 | Environment Variable | Required | Description                                                                                                                                                               | Example                                                                                                              |
 | -------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `PORT`              | No       | Port on which the server will listen                                                                                                                           | `3000`                                                                                                               |
 | `PROXY_API_KEY`     | Yes      | API key for client authentication with Difyworker                                                                                                                  | `your_proxy_api_key`                                                                                                 |
 | `DIFY_AGENT1_NAME`     | Yes      | Name of the first agent (used as the model parameter)                                                                                                                  | `agent1`                                                                                                 |
 | `DIFY_AGENT1_TYPE`     | Yes      | Type of the first agent                                                                                                                  | `Chat,Completion,Workflow`                                                                                                 |
