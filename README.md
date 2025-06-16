@@ -36,7 +36,7 @@ console.log(data);
 
 Copy the example configuration file and update it with your values:
    ```bash
-   cp wrangler.example.toml wrangler.toml
+   cp wrangler.toml.template wrangler.toml
    ```
 
 Log into Cloudflare and deploy:
